@@ -2,7 +2,7 @@ name: Build APK
 on: workflow_dispatch
 
 env:
-  APP_NAME: "com.ligacalculus.trufalse"
+  APP_NAME: "com.sportgames.liness.quiz"
 
   ChatID: "-1001730907007"
   BotToken: "5541471253:AAFGq-cwlYERC9nSYc68_94bWOH0Fx1KkVU"

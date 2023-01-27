@@ -2,7 +2,7 @@ name: Build AAB
 on: workflow_dispatch
 
 env:
-  APP_NAME: "com.ligacalculus.trufalse"
+  APP_NAME: "com.sportgames.liness.quiz"
   
   AndroidKeystorePass: "password"
   AndroidKeyaliasPass: "password"
