@@ -44,7 +44,7 @@ jobs:
            name: Sign Bundle
            id: sign_app
            with:
-                releaseDirectory: app/build/
+                releaseDirectory: app/build/outputs/bundle/release
                 signingKeyBase64: ${{ secrets.SIGNING_KEY }}
                 alias: ${{ env.AndroidKeyaliasName }}
                 keyStorePassword: ${{ env.AndroidKeystorePass }}
