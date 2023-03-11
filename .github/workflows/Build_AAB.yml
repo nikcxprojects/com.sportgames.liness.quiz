@@ -37,19 +37,19 @@ jobs:
          - name: Grant execute permission for gradlew
            run: chmod +x gradlew
            
-         - name: Build Release Bundle
-           run: ./gradlew bundle
+         - name: Build app bundle release
+           run: ./gradlew ${{ env.main_project_module }}:bundleRelease
                 
          - uses: actions/upload-artifact@v2
            name: upload files
            with:
                 name: ${{ env.APP_NAME }}
-                path: app/build/outputs/
+                path: /build/outputs/bundle/release/
                 
          - name: Sign Bundle
            uses: r0adkll/sign-android-release@v1
            with:
-                releaseDirectory: app/build/outputs/bundle/release/
+                releaseDirectory: /build/outputs/bundle/release/
                 signingKeyBase64: ${{ secrets.SIGNING_KEY }}
                 alias: ${{ env.AndroidKeyaliasName }}
                 keyStorePassword: ${{ env.AndroidKeystorePass }}
@@ -57,7 +57,7 @@ jobs:
          - uses: vimtor/action-zip@v1
            name: Zipping AAB
            with:
-            files: app/build/outputs/bundle/release/
+            files: /build/outputs/bundle/release/
             dest: project_folder/${{ env.APP_NAME }}(AAB).zip
            
          - name: Send Zip to Telegram
