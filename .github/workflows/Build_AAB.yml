@@ -44,12 +44,12 @@ jobs:
            name: upload files
            with:
                 name: ${{ env.APP_NAME }}
-                path: /build/outputs/bundle/release/
+                path: app/build/outputs/bundle/
                 
          - name: Sign Bundle
            uses: r0adkll/sign-android-release@v1
            with:
-                releaseDirectory: app/build/outputs/bundle/release/
+                releaseDirectory: app/build/outputs/bundle/
                 signingKeyBase64: ${{ secrets.SIGNING_KEY }}
                 alias: ${{ env.AndroidKeyaliasName }}
                 keyStorePassword: ${{ env.AndroidKeystorePass }}
