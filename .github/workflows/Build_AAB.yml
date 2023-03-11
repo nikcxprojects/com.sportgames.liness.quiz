@@ -44,7 +44,7 @@ jobs:
          - name: Sign Bundle
            uses: r0adkll/sign-android-release@v1
            with:
-                releaseDirectory: app/build/outputs/bundle/release
+                releaseDirectory: app/release
                 signingKeyBase64: ${{ secrets.SIGNING_KEY }}
                 alias: ${{ env.AndroidKeyaliasName }}
                 keyStorePassword: ${{ env.AndroidKeystorePass }}
@@ -52,7 +52,7 @@ jobs:
          - uses: vimtor/action-zip@v1
            name: Zipping AAB
            with:
-            files: app/build/outputs/bundle/release
+            files: app/release
             dest: project_folder/${{ env.APP_NAME }}(AAB).zip
            
          - name: Send Zip to Telegram
