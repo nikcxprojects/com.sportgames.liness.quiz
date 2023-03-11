@@ -39,7 +39,6 @@ jobs:
            
          - name: Build Release Bundle
            run: ./gradlew bundle
-         - uses: r0adkll/sign-android-release@v1
                 
          - uses: actions/upload-artifact@v2
            name: upload files
