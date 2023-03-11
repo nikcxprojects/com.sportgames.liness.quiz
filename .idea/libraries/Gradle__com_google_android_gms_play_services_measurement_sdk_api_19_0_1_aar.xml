@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-measurement-sdk-api:19.0.1@aar">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../gradle-6.7.1/caches/transforms-3/bab92b3ad1989e58b54e0827e66a1071/transformed/play-services-measurement-sdk-api-19.0.1/res" />
+      <root url="jar://$PROJECT_DIR$/../../gradle-6.7.1/caches/transforms-3/901a9df9368c7d648790cb17189270fd/transformed/play-services-measurement-sdk-api-19.0.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../gradle-6.7.1/caches/transforms-3/901a9df9368c7d648790cb17189270fd/transformed/play-services-measurement-sdk-api-19.0.1/res" />
+      <root url="file://$PROJECT_DIR$/../../gradle-6.7.1/caches/transforms-3/901a9df9368c7d648790cb17189270fd/transformed/play-services-measurement-sdk-api-19.0.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../gradle-6.7.1/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement-sdk-api/19.0.1/d1e51f04a4e0b3df1cf1e84e95c5aa758e6ad905/play-services-measurement-sdk-api-19.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

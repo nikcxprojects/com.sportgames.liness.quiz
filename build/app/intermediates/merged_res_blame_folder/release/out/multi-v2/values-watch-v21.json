@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.sportgames.liness.quiz.app-mergeReleaseResources-41:/values-watch-v21/values-watch-v21.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Professional\\Desktop\\gradle-6.7.1\\caches\\transforms-3\\c872214a0e777888e2ee28b85ac2a1a7\\transformed\\appcompat-1.6.0\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "from": {
+                        "startLines": "2,6,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,271,499",
+                        "endLines": "5,9,13",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "266,494,724"
+                    }
+                }
+            ]
+        }
+    ]
+}
