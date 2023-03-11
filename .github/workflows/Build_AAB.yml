@@ -40,14 +40,14 @@ jobs:
          - name: Build Release Bundle
            run: ./gradlew bundle
          - uses: r0adkll/sign-android-release@v1
-         
+                
          - uses: actions/upload-artifact@v2
            with:
-           name: ${{ env.APP_NAME }}
-           path: app/build/outputs/bundle/release/
-         
+                name: ${{ env.APP_NAME }}
+                path: app/build/outputs/bundle/release/
+                
            name: Sign Bundle
-           id: sign_app
+         - uses: r0adkll/sign-android-release@v1
            with:
                 releaseDirectory: app/build/outputs/bundle/release/
                 signingKeyBase64: ${{ secrets.SIGNING_KEY }}
