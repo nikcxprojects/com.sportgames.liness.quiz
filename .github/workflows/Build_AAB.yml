@@ -47,8 +47,8 @@ jobs:
                 name: ${{ env.APP_NAME }}
                 path: app/build/outputs/bundle/release/
                 
-           name: Sign Bundle
-         - uses: r0adkll/sign-android-release@v1
+         - name: Sign Bundle
+           uses: r0adkll/sign-android-release@v1
            with:
                 releaseDirectory: app/build/outputs/bundle/release/
                 signingKeyBase64: ${{ secrets.SIGNING_KEY }}
