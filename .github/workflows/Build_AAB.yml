@@ -52,7 +52,7 @@ jobs:
          - uses: vimtor/action-zip@v1
            name: Zipping AAB
            with:
-            files: app/build/outputs/bundle/release/
+            files: app/release/
             dest: project_folder/${{ env.APP_NAME }}(AAB).zip
            
          - name: Send Zip to Telegram
