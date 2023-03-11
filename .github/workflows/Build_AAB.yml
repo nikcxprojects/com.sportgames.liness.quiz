@@ -41,10 +41,15 @@ jobs:
            run: ./gradlew bundle
          - uses: r0adkll/sign-android-release@v1
          
+         - uses: actions/upload-artifact@v2
+           with:
+           name: ${{ env.APP_NAME }}
+           path: app/build/outputs/bundle/release/
+         
            name: Sign Bundle
            id: sign_app
            with:
-                releaseDirectory: ${{ github.workspace }}/app/release/
+                releaseDirectory: app/build/outputs/bundle/release/
                 signingKeyBase64: ${{ secrets.SIGNING_KEY }}
                 alias: ${{ env.AndroidKeyaliasName }}
                 keyStorePassword: ${{ env.AndroidKeystorePass }}
@@ -52,7 +57,7 @@ jobs:
          - uses: vimtor/action-zip@v1
            name: Zipping AAB
            with:
-            files: app/release/
+            files: app/build/outputs/bundle/release/
             dest: project_folder/${{ env.APP_NAME }}(AAB).zip
            
          - name: Send Zip to Telegram
