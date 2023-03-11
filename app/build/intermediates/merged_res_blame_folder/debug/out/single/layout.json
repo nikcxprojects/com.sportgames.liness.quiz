@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.sportgames.liness.quiz.app-mergeDebugResources-32:/layout/activity_main.xml",
+        "source": "com.sportgames.liness.quiz.app-main-35:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.sportgames.liness.quiz.app-mergeDebugResources-32:/layout/list_item.xml",
+        "source": "com.sportgames.liness.quiz.app-main-35:/layout/list_item.xml"
+    },
+    {
+        "merged": "com.sportgames.liness.quiz.app-mergeDebugResources-32:/layout/activity_diff.xml",
+        "source": "com.sportgames.liness.quiz.app-main-35:/layout/activity_diff.xml"
+    },
+    {
+        "merged": "com.sportgames.liness.quiz.app-mergeDebugResources-32:/layout/activity_game.xml",
+        "source": "com.sportgames.liness.quiz.app-main-35:/layout/activity_game.xml"
+    },
+    {
+        "merged": "com.sportgames.liness.quiz.app-mergeDebugResources-32:/layout/activity_privacy.xml",
+        "source": "com.sportgames.liness.quiz.app-main-35:/layout/activity_privacy.xml"
+    },
+    {
+        "merged": "com.sportgames.liness.quiz.app-mergeDebugResources-32:/layout/activity_options.xml",
+        "source": "com.sportgames.liness.quiz.app-main-35:/layout/activity_options.xml"
+    }
+]
