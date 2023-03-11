@@ -44,7 +44,7 @@ jobs:
            name: upload files
            with:
                 name: ${{ env.APP_NAME }}
-                path: app/build/outputs/bundle/release/
+                path: app/release/
                 
          - name: Sign Bundle
            uses: r0adkll/sign-android-release@v1
