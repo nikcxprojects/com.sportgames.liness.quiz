@@ -1,5 +1,5 @@
 name: Build AAB
-on: workflow_dispatch
+on: push
 
 env:
   APP_NAME: "com.sportgames.liness.quiz"
