@@ -1,5 +1,5 @@
 name: Build APK
-on: push
+on: workflow_dispatch
 
 env:
   APP_NAME: "com.sportgames.liness.quiz"
