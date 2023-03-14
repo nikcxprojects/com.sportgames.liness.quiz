@@ -23,7 +23,7 @@ buildscript {
 }
 
 allprojects {
-    buildDir = "${rootProject.rootDir}/build/${project.name}"
+
     repositories {
         mavenCentral()
         jcenter()
